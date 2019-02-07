@@ -10526,3 +10526,11 @@ a.text-dark:focus {
   justify-content: center;
 }
 
+.wra_p {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background: grey;
+}
+
