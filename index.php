@@ -10,16 +10,17 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title></title>
   </head>
   <body>
     <?php
+// database
+      include 'db/database.php';
 
-      include 'nav_bar.php';
-
-
-
+// html
+      include 'partials/_nav.php';
+      include 'partials/_body.php';
     ?>
   </body>
 </html>
