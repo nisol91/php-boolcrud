@@ -3,12 +3,11 @@
 
 <?php
 // database
-include 'db/database_ospiti_list.php';
+include 'index/database_ospiti_list.php';
 
 // html
 include 'partials/_head.php';
 include 'partials/_nav.php';
-include 'partials/_body.php';
 
 ?>
   <body>

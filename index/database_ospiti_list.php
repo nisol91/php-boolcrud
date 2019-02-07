@@ -1,7 +1,7 @@
 <?php
 
 //connessione al server tramite php plain (non viene piu utilizzata e non va capita troppo a fondo)
-include 'env.php';
+include '/home/nicola/nicola_sites/php_sql_crud_hotel/credentials/env.php';
 // Connect
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
