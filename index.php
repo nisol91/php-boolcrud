@@ -14,6 +14,9 @@ include 'partials/_nav.php';
     <div class="title container-fluid">
       <h2>Lista degli Ospiti</h2>
     </div>
+    <div class="crea container-fluid">
+      <a href="http://localhost/php_sql_crud_hotel/show/show.php?id=<?php echo $value['id']; ?>"><button type="button" class="btn btn-primary">Add Host</button></a>
+    </div>
     <table class="table">
       <thead>
         <tr>
