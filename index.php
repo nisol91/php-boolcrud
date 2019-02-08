@@ -16,6 +16,13 @@ include 'partials/_nav.php';
     </div>
     <div class="crea container-fluid">
       <a href="http://localhost/php_sql_crud_hotel/create/create.php"><button type="button" class="btn btn-primary" style="width: 300px">Add Host</button></a>
+
+      <!-- cancella id selezionato -->
+      <form class="" action="http://localhost/php_sql_crud_hotel/delete_selected_id/database_delete_selected.php" method="post">
+        <!-- per passare l id da cancellare, lo metto direttamente nel VALUE di un input nascosto -->
+        <input type="text" name="iddd_showed_input" value="<?php echo $value['id']; ?>">
+        <td> <a href="#"><button type="submit" name="Cancella" class="form-control btn btn-danger">Delete Selected ID</button></a></td>
+      </form>
     </div>
     <table class="table">
       <thead>

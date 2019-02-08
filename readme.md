@@ -10,7 +10,7 @@ La crud dovrà contenere le seguenti pagine:
 
 --Pagina con form di creazione di un nuovo ospite, che dia la possibilità di inserire i seguenti campi: / OK
 
---Pagina con un form che permetta di aggiornare un ospite nei seguenti campi
+--Pagina con un form che permetta di aggiornare un ospite nei seguenti campi / OK
 
 --Bottone per cancellare l'ospite / OK
 

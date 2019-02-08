@@ -9,7 +9,15 @@
 .crea {
   padding: 5px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  form {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    button {
+      margin-left: 10px;
+    }
+  }
 }
 thead {
   border: none;

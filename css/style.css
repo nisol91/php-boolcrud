@@ -10507,7 +10507,19 @@ a.text-dark:focus {
 .navy img {
   float: left;
   height: 60px;
-  margin: 10px;
+  margin: 0;
+  margin-top: 12px;
+  margin-right: 12px;
+}
+
+.navy h1 {
+  float: left;
+  margin: 0;
+  margin-top: 26px;
+  font-size: 30px;
+  color: #213E5A;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .navy h5 {
@@ -10530,7 +10542,17 @@ a.text-dark:focus {
 .crea {
   padding: 5px;
   display: flex;
+  justify-content: space-around;
+}
+
+.crea form {
+  display: flex;
   justify-content: center;
+  margin-left: 10px;
+}
+
+.crea form button {
+  margin-left: 10px;
 }
 
 thead {
