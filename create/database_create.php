@@ -11,18 +11,21 @@ echo ( 'Connection failed: ' . $conn->connect_error);
   // echo 'Siamo dentro';
 }
 
+//-----ora posto i valori presi dal form
+$nome = $_POST['new_name'];
+$cognome = $_POST['new_lastname'];
+$nascita = $_POST['new_birth'];
+$tipo_doc = $_POST['new_type_doc'];
+$numero_doc = $_POST['new_doc'];
 
-//ora la query sql
-$sql = 'SELECT * FROM `ospiti`;';
+$sql = "INSERT INTO `ospiti` (`name`, `lastname`, `date_of_birth`, `document_type`, `document_number`)
+VALUES ('$nome', '$cognome', '$nascita', '$tipo_doc', '$numero_doc');";
 
 $result = $conn->query($sql);
-if ($result->num_rows > 0) {
-// output data of each row
 
-$ospiti = [];
-  while($row = $result->fetch_assoc()) {
-    $ospiti[] = $row;
-  }
+//-------********IMPORTANTE questa parte e' diversa nella post rispetto alla get!!!
+if ($result == true) {
+  echo 'ok, host added to db';
 //-----------
 } else {
   echo '0 results';

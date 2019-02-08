@@ -12,6 +12,8 @@ La crud dovrà contenere le seguenti pagine:
 
 --Pagina con un form che permetta di aggiornare un ospite nei seguenti campi
 
+--Bottone per cancellare l'ospite
+
 --Pagina di show di un singolo ospite con tutti i dati in nostro possesso. / OK
 
 
