@@ -32,7 +32,7 @@
         <label for="new_doc">Numero documento</label>
         <input type="text" class="form-control" name="new_doc" placeholder="Document number">
       </div>
-      <button type="submit" name="submit" class="form-control btn btn-primary">Submit</button>
+      <button type="submit" name="Crea" class="form-control btn btn-primary">Submit</button>
     </form>
   </body>
 </html>
