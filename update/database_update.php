@@ -11,19 +11,25 @@ echo ( 'Connection failed: ' . $conn->connect_error);
   // echo 'Siamo dentro';
 }
 
-//-----****POST e DELETE sono molto simili, cambia solo la query sql
-$id_delete = $_POST['iddd_hidden_input'];
-//IMPORTANTISSIMO: cosi come nel create, per passare valori degli input dal form a qui, li riconosco tramite il
-//name="" degli input!!(che deve essere uguale al for="", se e' presente una label )
-//(in questo caso il mio name e' 'iddd_hidden_input')
+//-----ora posto i valori presi dal form tramite il valore name="" degli input.
+$nome = $_POST['new_name'];
+$cognome = $_POST['new_lastname'];
+$nascita = $_POST['new_birth'];
+$tipo_doc = $_POST['new_type_doc'];
+$numero_doc = $_POST['new_doc'];
 
-$sql = "DELETE FROM `ospiti` WHERE id = '$id_delete';";
+$my_id_update = $_POST['id_update'];
+
+
+$sql = "UPDATE `ospiti`
+SET `name` = '$nome', `lastname` = '$cognome', `date_of_birth` = '$nascita', `document_type` = '$tipo_doc', `document_number` = '$numero_doc'
+WHERE id = '$my_id_update';";
 
 $result = $conn->query($sql);
 
 //-------********IMPORTANTE questa parte e' diversa nella post rispetto alla get!!!
 if ($result == true) {
-  echo 'ok, host deleted from db';
+  echo 'ok, host updated';
 //-----------
 } else {
   echo '0 results';

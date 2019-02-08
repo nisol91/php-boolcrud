@@ -32,7 +32,7 @@ include 'partials/_nav.php';
             <td><?php echo $value['name']; ?></td>
             <td><?php echo $value['lastname']; ?></td>
             <td> <a href="http://localhost/php_sql_crud_hotel/show/show.php?id=<?php echo $value['id']; ?>"><button type="button" class="btn btn-primary">View</button></a></td>
-            <td> <a href="#"><button type="button" class="btn btn-success">Edit</button></a></td>
+            <td> <a href="http://localhost/php_sql_crud_hotel/update/update.php?id=<?php echo $value['id']; ?>"><button type="button" class="btn btn-success">Edit</button></a></td>
             <form class="" action="http://localhost/php_sql_crud_hotel/delete/database_delete.php" method="post">
               <!-- per passare l id da cancellare, lo metto direttamente nel VALUE di un input nascosto -->
               <input type="hidden" name="iddd_hidden_input" value="<?php echo $value['id']; ?>">
