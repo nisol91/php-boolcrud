@@ -19,10 +19,6 @@ La crud dovrà contenere le seguenti pagine:
 
 ----------------------------*****
 
---Ogni pagina avrà un suo file php di display dei dati, ma anche almeno uno che faccia la query sul database necessaria.
-
 --FACOLTATIVO:La pagina show avrà un file in cui si visualizzano a schermo tutti i dati, volendo aiutandosi con una function per il recupero del record set dell’ospite.
-
---La pagina create avrà un file in cui si visualizza il form e uno in cui si salva la nuova risorsa
 
 --La pagina update avrà 2 file. Uno che si preoccupa di aggiornare i dati e uno che visualizza il form a schermo come nel caso di show aiutandosi volendo con una function che recuperi il record set.

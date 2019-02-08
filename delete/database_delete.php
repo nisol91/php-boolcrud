@@ -12,7 +12,10 @@ echo ( 'Connection failed: ' . $conn->connect_error);
 }
 
 //-----****POST e DELETE sono molto simili, cambia solo la query sql
-$id_delete = $_POST['id'];
+$id_delete = $_POST['iddd_hidden_input'];
+//IMPORTANTISSIMO: cosi come nel create, per passare valori dal form a qui, li riconosco tramite il
+//name="" degli input!!(che deve essere uguale al for="", se e' presente una label )
+//(in questo caso il mio name e' 'iddd_hidden_input')
 
 $sql = "DELETE FROM `ospiti` WHERE id = '$id_delete';";
 

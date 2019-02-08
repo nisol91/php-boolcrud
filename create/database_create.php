@@ -11,7 +11,7 @@ echo ( 'Connection failed: ' . $conn->connect_error);
   // echo 'Siamo dentro';
 }
 
-//-----ora posto i valori presi dal form
+//-----ora posto i valori presi dal form tramite il valore name="" degli input.
 $nome = $_POST['new_name'];
 $cognome = $_POST['new_lastname'];
 $nascita = $_POST['new_birth'];
