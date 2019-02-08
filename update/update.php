@@ -2,7 +2,12 @@
 <html lang="en" dir="ltr">
     <?php
     // database
-    include 'database_ospiti_list_per_update.php';
+    // include 'database_ospiti_list_per_update.php';
+
+
+    //invece che chiamare il file con la query che mi prende tutti i valori di ospiti, ho messo la query in un file funzioni generico.
+    include '../functions/functions.php';
+    $ospiti = getData();
     // html
     include '../partials/_head.php';
     include '../partials/_nav.php';

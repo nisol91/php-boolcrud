@@ -16,11 +16,4 @@ La crud dovrà contenere le seguenti pagine:
 
 --Pagina di show di un singolo ospite con tutti i dati in nostro possesso. / OK
 
-
-----------------------------*****
-
-FACOLTATIVO:
-
---La pagina show avrà un file in cui si visualizzano a schermo tutti i dati, volendo aiutandosi con una function per il recupero del record set dell’ospite.
-
---La pagina update avrà 2 file. Uno che si preoccupa di aggiornare i dati e uno che visualizza il form a schermo come nel caso di show aiutandosi volendo con una function che recuperi il record set.
+--Funzione per richiamare gli ospiti dal db / OK
