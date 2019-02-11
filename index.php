@@ -20,7 +20,7 @@ include 'partials/_nav.php';
       <!-- cancella id selezionato -->
       <form class="" action="http://localhost/php_sql_crud_hotel/delete_selected_id/database_delete_selected.php" method="post">
         <!-- per passare l id da cancellare, lo metto direttamente nel VALUE di un input nascosto -->
-        <input type="text" name="iddd_showed_input" value="<?php echo $value['id']; ?>">
+        <input type="text" name="iddd_show_input" value="<?php echo $value['id']; ?>">
         <td> <a href="#"><button type="submit" name="Cancella" class="form-control btn btn-danger">Delete Selected ID</button></a></td>
       </form>
     </div>
