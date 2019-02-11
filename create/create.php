@@ -24,9 +24,17 @@
         <label for="new_birth">Data di nascita</label>
         <input type="text" class="form-control" name="new_birth" placeholder="Birth Date">
       </div>
-      <div class="form-group">
+      <!-- <div class="form-group">
         <label for="new_type_doc">Tipo di documento</label>
         <input type="text" class="form-control" name="new_type_doc" placeholder="Document Type">
+      </div> -->
+      <div class="form-group">
+        <label for="new_type_doc">Tipo di documento</label>
+        <select class="form-control" name="new_type_doc" id="exampleFormControlSelect1">
+          <option value="">Select document type</option>
+          <option value="CI">CI</option>
+          <option value="Driver License">Driver License</option>
+        </select>
       </div>
       <div class="form-group">
         <label for="new_doc">Numero documento</label>
